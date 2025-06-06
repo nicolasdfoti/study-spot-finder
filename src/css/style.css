@@ -29,6 +29,21 @@ p {
   color: var(--text-primary);
 }
 
+button {
+  width: 100%;
+  padding: 10px;
+  background-color: var(--buttons);
+  border: none;
+  align-self: center;
+  margin: 10px;
+}
+
+button:hover {
+  cursor: pointer;
+  color: var(--background);
+  background-color: var(--titles);
+}
+
 header {
   display: flex;
   justify-content: space-between;
@@ -125,6 +140,7 @@ main {
   text-decoration: none;
   padding: 10px;
   color: var(--text-primary);
+  margin-bottom: 10px;
 }
 
 #explore a:hover {
@@ -154,19 +170,4 @@ main {
   flex-direction: column;
   padding: 20px;
   margin: 20px;
-}
-
-#story button {
-  width: 40%;
-  padding: 10px;
-  background-color: var(--buttons);
-  border: none;
-  align-self: center;
-  margin: 10px;
-}
-
-#story button:hover {
-  cursor: pointer;
-  color: var(--background);
-  background-color: var(--titles);
 }
