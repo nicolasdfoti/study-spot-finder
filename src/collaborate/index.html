@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="/images/principal-logo.png">
+    <link rel="stylesheet" href="/src/css/style.css">
+    <script type="module" src="/src/js/collaborate.js"></script>
+    <title>Study Spot Finder</title>
+  </head>
+
+  <body>
+    <header id="main-header">
+
+      <div id="title-header">
+        <img src="/images/principal-logo.png" alt="">
+
+        <div>
+        <h1>Study Spot Finder</h1>
+        <p>Find your perfect spot: Find your Study Spot</p>
+        </div>
+      </div>
+
+      <nav>
+        <a href="/index.html">Home</a>
+        <a href="/src/favorite-spots/index.html">Favorite Spots</a>
+        <a href="/src/collaborate/index.html">Collaborate</a>
+      </nav>
+      
+    </header>
+
+    <main>
+      <div id="main-div">
+        <h1>Study Spot Finder: Home</h1>
+        <p>Tired of noises and people coming and going? We have your next favorite study spot.</p>
+      </div>
+
+      <form action="" id="collaborateForm">
+
+        <legend>Collaborate with us! Enter your favorite study spot:</legend>
+
+        <fieldset>
+          <label for="name">Enter the place's name: <input type="text" name="name" id="name" required></label>
+          <label for="address">Enter the place's location: <input type="text" name="address" id="address" required></label>
+        </fieldset>
+
+        <fieldset>
+          <label for="type">Select the type of spot:
+            <select name="type" id="type" required>
+              <option value="none" selected disabled>Select one</option>
+              <option value="park">Park</option>
+              <option value="coffee">Coffee Shop</option>
+              <option value="library">Library</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="noise" required>How quiet is it?
+            <select name="noise" id="noise">
+              <option value="noise" selected disabled>Select one:</option>
+              <option value="very-quiet">Very quiet</option>
+              <option value="moderate">Moderate</option>
+              <option value="noisy">Noisy</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="wifi">Does it have Wi-Fi?
+            <select name="wifi" id="wifi" selected required>
+              <option value="wifi">Select one:</option>
+              <option value="yes">Yes</option>
+              <option value="no">No</option>
+              <option value="unknown">I don't know</option>
+            </select>
+          </label>
+        </fieldset>
+
+        <fieldset>
+          <label for="comments">Additional comments:
+            <textarea name="comments" id="comments" placeholder="Tell us what makes this place special..."></textarea>
+          </label>
+        </fieldset>
+
+        <button type="submit">Submit Spot</button>
+
+      </form>
+
+    </main>
+
+    <footer id="main-footer">
+      <h1>Study Spot Finder</h1>
+      <p>&copy; 2025</p>
+    </footer>
+  </body>
+  
+</html>

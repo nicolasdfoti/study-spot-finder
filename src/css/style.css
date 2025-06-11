@@ -35,7 +35,6 @@ button {
   background-color: var(--buttons);
   border: none;
   align-self: center;
-  margin: 10px;
 }
 
 button:hover {
@@ -44,12 +43,13 @@ button:hover {
   background-color: var(--titles);
 }
 
-header {
+#main-header {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
-header img {
+#main-header img {
   width: 70px;
 }
 
@@ -62,11 +62,13 @@ header img {
 nav {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 10px;
 }
 
 nav a {
   text-decoration: none;
+  text-align: center;
   color: var(--background);
   font-size: 20px;
 }
@@ -75,13 +77,13 @@ nav a:hover {
   text-decoration: underline;
 }
 
-header, footer {
+#main-header, #main-footer {
   background-color: var(--header-footer);
-  padding: 20px;
   font-family: var(--realeway);
+  padding: 10px;
 }
 
-header h1, header p,
+#main-header h1, #main-header p,
 footer h1, footer p {
   color: white;
 }
@@ -107,7 +109,7 @@ main {
   align-items: center;
   justify-content: center;
   position: relative;
-  background-image: url("/public/images/hero-image.avif");
+  background-image: url("/images/hero-image.avif");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -170,4 +172,50 @@ main {
   flex-direction: column;
   padding: 20px;
   margin: 20px;
+}
+
+/* Collaborate */
+
+/* Form */
+
+legend {
+  font-family: var(--realeway);
+  color: var(--titles);
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 15px;
+}
+
+fieldset {
+  border: none;
+}
+
+label {
+  font-family: var(--realeway);
+  color: var(--titles);
+  font-weight: bold;
+}
+
+input, select, textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  font-family: var(--open);
+}
+
+input:required, select:required {
+  border: 3px solid red;
+}
+
+input:valid, select:valid {
+  border: 3px solid green;
+}
+
+#collaborateForm {
+  margin: 10px;
+  padding: 10px;
+  width: 70%;
+  justify-self: center;
+  border: 1px solid var(--titles);
 }
