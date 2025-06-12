@@ -1,0 +1,92 @@
+[
+  {
+    "id": "spot001",
+    "name": "Brew & Study",
+    "address": "123 Elm Street, Downtown",
+    "type": "coffee_shop",
+    "noise": "medium",
+    "wifi": "yes",
+    "comments": "Great vibe, but can get crowded in the afternoon."
+  },
+  {
+    "id": "spot002",
+    "name": "The Thinking Cup",
+    "address": "45 Oak Avenue, Midtown",
+    "type": "coffee_shop",
+    "noise": "low",
+    "wifi": "yes",
+    "comments": "Quiet and cozy, perfect for deep focus."
+  },
+  {
+    "id": "spot003",
+    "name": "Java Joint",
+    "address": "789 Maple Drive, Suburbia",
+    "type": "coffee_shop",
+    "noise": "high",
+    "wifi": "yes",
+    "comments": "Loud but energizing, ideal for group work."
+  },
+  {
+    "id": "spot004",
+    "name": "Mocha Mood",
+    "address": "321 Cedar Lane, Arts District",
+    "type": "coffee_shop",
+    "noise": "medium",
+    "wifi": "no",
+    "comments": "No Wi-Fi but great atmosphere and coffee."
+  },
+  {
+    "id": "spot005",
+    "name": "Study Beans",
+    "address": "555 Birch Road, University Area",
+    "type": "coffee_shop",
+    "noise": "low",
+    "wifi": "yes",
+    "comments": "Mostly students, very quiet in the mornings."
+  },
+  {
+    "id": "spot006",
+    "name": "Caffeine Corner",
+    "address": "66 Pine Street, Central",
+    "type": "coffee_shop",
+    "noise": "high",
+    "wifi": "yes",
+    "comments": "Great coffee, loud music. Bring headphones."
+  },
+  {
+    "id": "spot007",
+    "name": "Bitter Beans",
+    "address": "88 Spruce Street, Old Town",
+    "type": "coffee_shop",
+    "noise": "medium",
+    "wifi": "no",
+    "comments": "No Wi-Fi, but friendly staff and outlets everywhere."
+  },
+  {
+    "id": "spot008",
+    "name": "Quiet Cup",
+    "address": "142 Cherry Blvd, Downtown",
+    "type": "coffee_shop",
+    "noise": "low",
+    "wifi": "yes",
+    "comments": "Extremely quiet, ideal for writing sessions."
+  },
+  {
+    "id": "spot009",
+    "name": "Perk Palace",
+    "address": "19 Walnut St, Market District",
+    "type": "coffee_shop",
+    "noise": "medium",
+    "wifi": "yes",
+    "comments": "Good seating and ambient music."
+  },
+  {
+    "id": "spot010",
+    "name": "Grind House",
+    "address": "654 Palm Ave, South Side",
+    "type": "coffee_shop",
+    "noise": "high",
+    "wifi": "no",
+    "comments": "Great coffee but loud and busy."
+  }
+]

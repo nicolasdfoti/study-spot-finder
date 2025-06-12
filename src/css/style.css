@@ -219,3 +219,41 @@ input:valid, select:valid {
   justify-self: center;
   border: 1px solid var(--titles);
 }
+
+/* Places */
+
+/* Cards */
+
+#spots-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.spot-card {
+  background-color: var(--background);
+  border: 1px solid var(--text-primary);
+  padding: 3px;
+  margin: 5px;
+  text-decoration: none;
+  box-shadow: 0 2px 4px 0px var(--header-footer);
+  
+}
+
+.spot-card:hover {
+  background-color: #A8CABA;
+  box-shadow: 0px 2px 2px 0px var(--titles);
+  transition: background-color 0.5s ease;
+  transform: translateY(-3px);
+}
+
+.spot-card h3 {
+  font-family: var(--realeway);
+  color: var(--text-primary);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.spot-card p {
+  font-family: var(--open);
+  color: var(--header-footer);
+}

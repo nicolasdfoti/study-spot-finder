@@ -1,0 +1,92 @@
+[
+  {
+    "id": "spot011",
+    "name": "Central Library",
+    "address": "1 Library Plaza, Downtown",
+    "type": "library",
+    "noise": "low",
+    "wifi": "yes",
+    "comments": "Massive library with many study rooms."
+  },
+  {
+    "id": "spot012",
+    "name": "Westside Public Library",
+    "address": "456 West Street, Suburbs",
+    "type": "library",
+    "noise": "low",
+    "wifi": "yes",
+    "comments": "Peaceful and usually not crowded."
+  },
+  {
+    "id": "spot013",
+    "name": "East End Library",
+    "address": "202 East Ave, East End",
+    "type": "library",
+    "noise": "medium",
+    "wifi": "yes",
+    "comments": "Nice for study groups, can be noisy near entrance."
+  },
+  {
+    "id": "spot014",
+    "name": "North Reading Hall",
+    "address": "85 Arctic Rd, North District",
+    "type": "library",
+    "noise": "low",
+    "wifi": "no",
+    "comments": "No Wi-Fi, but calm and very traditional."
+  },
+  {
+    "id": "spot015",
+    "name": "The Archive Room",
+    "address": "77 History Lane, Old Town",
+    "type": "library",
+    "noise": "low",
+    "wifi": "yes",
+    "comments": "Very quiet, ideal for research."
+  },
+  {
+    "id": "spot016",
+    "name": "Student Resource Library",
+    "address": "23 Campus Blvd, University Zone",
+    "type": "library",
+    "noise": "medium",
+    "wifi": "yes",
+    "comments": "Packed during exams but great resources."
+  },
+  {
+    "id": "spot017",
+    "name": "Southside Reading Center",
+    "address": "99 Main St, South Side",
+    "type": "library",
+    "noise": "low",
+    "wifi": "yes",
+    "comments": "Comfy chairs and study cubicles."
+  },
+  {
+    "id": "spot018",
+    "name": "Digital Learning Hub",
+    "address": "12 Tech Ave, Innovation Park",
+    "type": "library",
+    "noise": "medium",
+    "wifi": "yes",
+    "comments": "More of a co-working space, tech-friendly."
+  },
+  {
+    "id": "spot019",
+    "name": "The Knowledge Nest",
+    "address": "456 Wisdom Rd, Midtown",
+    "type": "library",
+    "noise": "low",
+    "wifi": "no",
+    "comments": "Old-fashioned charm, no distractions."
+  },
+  {
+    "id": "spot020",
+    "name": "Community Library Hall",
+    "address": "35 Unity Street, Local Borough",
+    "type": "library",
+    "noise": "medium",
+    "wifi": "yes",
+    "comments": "Helpful staff and group tables."
+  }
+]

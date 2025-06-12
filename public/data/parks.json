@@ -1,0 +1,92 @@
+[
+  {
+    "id": "spot021",
+    "name": "Greenview Park",
+    "address": "101 Parkside Ave, Northside",
+    "type": "park",
+    "noise": "medium",
+    "wifi": "no",
+    "comments": "Lots of trees and benches, occasional dogs barking."
+  },
+  {
+    "id": "spot022",
+    "name": "Lakeview Gardens",
+    "address": "87 Lake Road, East Shore",
+    "type": "park",
+    "noise": "low",
+    "wifi": "no",
+    "comments": "Near the water, very peaceful."
+  },
+  {
+    "id": "spot023",
+    "name": "Central Park Meadows",
+    "address": "500 Meadow Lane, City Center",
+    "type": "park",
+    "noise": "high",
+    "wifi": "yes",
+    "comments": "Lively and full of people, but has public Wi-Fi."
+  },
+  {
+    "id": "spot024",
+    "name": "Silent Grove",
+    "address": "14 Forest Path, West Woods",
+    "type": "park",
+    "noise": "low",
+    "wifi": "no",
+    "comments": "Shady and quiet, birds chirping is the only sound."
+  },
+  {
+    "id": "spot025",
+    "name": "Open Skies Field",
+    "address": "66 Horizon Dr, Countryside",
+    "type": "park",
+    "noise": "medium",
+    "wifi": "no",
+    "comments": "Wide open space, windy but calming."
+  },
+  {
+    "id": "spot026",
+    "name": "Urban Oasis",
+    "address": "301 Concrete Blvd, Downtown",
+    "type": "park",
+    "noise": "high",
+    "wifi": "yes",
+    "comments": "Modern design with Wi-Fi, but street noise nearby."
+  },
+  {
+    "id": "spot027",
+    "name": "Maple Hill Park",
+    "address": "72 Maple Rd, Suburbs",
+    "type": "park",
+    "noise": "low",
+    "wifi": "no",
+    "comments": "Great for morning walks and reading."
+  },
+  {
+    "id": "spot028",
+    "name": "Willow Creek",
+    "address": "19 Brook Street, Riverbank",
+    "type": "park",
+    "noise": "medium",
+    "wifi": "no",
+    "comments": "Small but has quiet corners near the creek."
+  },
+  {
+    "id": "spot029",
+    "name": "Sunset Plaza",
+    "address": "9 Sunset Blvd, Uptown",
+    "type": "park",
+    "noise": "high",
+    "wifi": "yes",
+    "comments": "Busy and social, bring headphones."
+  },
+  {
+    "id": "spot030",
+    "name": "Serenity Park",
+    "address": "88 Calm Way, Serenity Hills",
+    "type": "park",
+    "noise": "low",
+    "wifi": "no",
+    "comments": "Lives up to its name. Ideal for journaling."
+  }
+]
