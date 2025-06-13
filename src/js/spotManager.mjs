@@ -10,13 +10,13 @@ async function init() {
     let spots = [];
 
     // determine the correct category from the URL path
-    if (window.location.pathname.endsWith("parks.html")) {
+    if (window.location.pathname.endsWith("/parks/index.html")) {
         spots = await getParkSpots();
 
-    } else if (window.location.pathname.endsWith("coffee-shops.html")) {
+    } else if (window.location.pathname.endsWith("/coffee-shops/index.html")) {
         spots = await getCoffeeSpots();
 
-    } else if (window.location.pathname.endsWith("libraries.html")) {
+    } else if (window.location.pathname.endsWith("libraries/index.html")) {
         spots = await getLibrarySpots();
     }
 
