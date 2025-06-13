@@ -10,7 +10,7 @@ export default defineConfig({
         favorite_spots: resolve(__dirname, "src/favorite-spots/index.html"),
         coffee_shops: resolve(__dirname, "src/coffee-shops.html"),
         libraries: resolve(__dirname, "src/libraries.html"),
-        parks: resolve(__dirname, "src/parks.html"),
+        parks: resolve(__dirname, "src/parks.html")
       }
     }
   }
