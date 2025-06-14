@@ -7,6 +7,7 @@ loadHeaderFooter();
 
 async function init() {
 
+    const path = window.location.pathname;
     console.log("Ruta:", window.location.pathname);
 
     let spots = [];
