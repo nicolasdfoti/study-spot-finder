@@ -7,6 +7,8 @@ loadHeaderFooter();
 
 async function init() {
 
+    console.log("Ruta:", window.location.pathname);
+
     let spots = [];
 
     // determine the correct category from the URL path
@@ -19,6 +21,8 @@ async function init() {
     } else if (window.location.pathname.endsWith("libraries/index.html")) {
         spots = await getLibrarySpots();
     }
+
+    console.log("Spots cargados:", spots);
 
     renderCards(spots);
 }
