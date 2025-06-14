@@ -12,13 +12,13 @@ async function init() {
     let spots = [];
 
     // determine the correct category from the URL path
-    if (path.endsWith("/parks/index.html") || path.endsWith("/parks/")) {
+    if (path.includes("/parks")) {
     spots = await getParkSpots();
 
-    } else if (path.endsWith("/coffee-shops/index.html") || path.endsWith("/coffee-shops/")) {
+    } else if (path.includes("/coffee-shops")) {
         spots = await getCoffeeSpots();
 
-    } else if (path.endsWith("/libraries/index.html") || path.endsWith("/libraries/")) {
+    } else if (path.includes("/libraries")) {
         spots = await getLibrarySpots();
     }
 
