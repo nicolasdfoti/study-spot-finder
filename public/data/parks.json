@@ -6,6 +6,7 @@
     "type": "park",
     "noise": "medium",
     "wifi": "no",
+    "rating": "3",
     "comments": "Lots of trees and benches, occasional dogs barking."
   },
   {
@@ -15,6 +16,7 @@
     "type": "park",
     "noise": "low",
     "wifi": "no",
+    "rating": "2",
     "comments": "Near the water, very peaceful."
   },
   {
@@ -24,6 +26,7 @@
     "type": "park",
     "noise": "high",
     "wifi": "yes",
+    "rating": "2",
     "comments": "Lively and full of people, but has public Wi-Fi."
   },
   {
@@ -33,6 +36,7 @@
     "type": "park",
     "noise": "low",
     "wifi": "no",
+    "rating": "2",
     "comments": "Shady and quiet, birds chirping is the only sound."
   },
   {
@@ -42,6 +46,7 @@
     "type": "park",
     "noise": "medium",
     "wifi": "no",
+    "rating": "3",
     "comments": "Wide open space, windy but calming."
   },
   {
@@ -51,6 +56,7 @@
     "type": "park",
     "noise": "high",
     "wifi": "yes",
+    "rating": "2",
     "comments": "Modern design with Wi-Fi, but street noise nearby."
   },
   {
@@ -60,6 +66,7 @@
     "type": "park",
     "noise": "low",
     "wifi": "no",
+    "rating": "3",
     "comments": "Great for morning walks and reading."
   },
   {
@@ -69,6 +76,7 @@
     "type": "park",
     "noise": "medium",
     "wifi": "no",
+    "rating": "2",
     "comments": "Small but has quiet corners near the creek."
   },
   {
@@ -78,6 +86,7 @@
     "type": "park",
     "noise": "high",
     "wifi": "yes",
+    "rating": "4",
     "comments": "Busy and social, bring headphones."
   },
   {
@@ -87,6 +96,7 @@
     "type": "park",
     "noise": "low",
     "wifi": "no",
+    "rating": "1",
     "comments": "Lives up to its name. Ideal for journaling."
   }
 ]

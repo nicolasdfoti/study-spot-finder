@@ -54,6 +54,7 @@ function buildSpotCard(spot) {
         <p>Location: ${spot.address}</p>
         <p>Is it noisy? ${spot.noise}</p>
         <p>Does it have WiFi? ${spot.wifi}</p>
+        <p>Overall rating: ${spot.rating}</p>
         <p>Comments: ${spot.comments}</p>
     `;
 
