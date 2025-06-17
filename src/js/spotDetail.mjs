@@ -3,8 +3,12 @@
 import { getParam, loadHeaderFooter, getLocalStorage, getUserSpots, findSpotById, fetchSpotFromJSON, setLocalStorage, removeFromFavorites } from "./utils.mjs";
 import { loadAndStoreSpots, getAllSpotsFromStorage } from "./externalServices.mjs";
 
-await loadHeaderFooter();
-await loadAndStoreSpots();
+async function init() {
+    await loadHeaderFooter();
+    await loadAndStoreSpots();
+}
+
+init();
 
 const spotId = getParam("id");
 const origin = getParam("from");
