@@ -103,5 +103,5 @@ export async function fetchSpotFromJSON(path) {
 
 // get spots that user entered
 export function getUserSpots() {
-  return JSON.parse(localStorage.getItem("user-spots")) || [];
+  return JSON.parse(localStorage.getItem("collaborates-spots")) || [];
 }

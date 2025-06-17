@@ -53,10 +53,17 @@ button:hover {
   width: 70px;
 }
 
-#title-header {
+#title-header a {
   display: flex;
+  text-decoration: none;
   align-items: center;
   gap: 10px;
+  padding: 10px;
+}
+
+#title-header a:hover {
+  transform: translateX(10px);
+  background-color: var(--text-primary);
 }
 
 nav {
@@ -267,14 +274,17 @@ input:valid, select:valid {
 
 #spot-details {
   display: grid;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
   height: 500px;
   align-items: center;
 }
 
 .spot-info {
   background-color: var(--background);
-  width: 100%;
+  width: 90%;
+  justify-self: center;
   padding: 10px;
 }
 
@@ -291,4 +301,27 @@ input:valid, select:valid {
 .spot-info button {
   margin-top: 10px;
   font-size: 20px;
+}
+
+/* Timer */
+
+#main-timer {
+  display: grid;
+  gap: 70px;
+}
+
+#timer {
+  width: 50%;
+  justify-self: center;
+  height: auto;
+  margin-bottom: 30px;
+  padding: 10px;
+  border: 2px solid var(--header-footer);
+}
+
+#timer h1 {
+  text-align: center;
+  background-color: var(--titles);
+  color: var(--background);
+  width: 100%;
 }

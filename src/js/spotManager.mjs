@@ -1,31 +1,44 @@
 // SPOTS MJS: Manages the data that comes from the JSON and filters it
 
 import { getCoffeeSpots, getLibrarySpots, getParkSpots } from "./externalServices.mjs";
-import { loadHeaderFooter, buildSpotCard } from "./utils.mjs";
+import { loadHeaderFooter, buildSpotCard, getUserSpots } from "./utils.mjs";
 
 loadHeaderFooter();
 
+// Init function
 async function init() {
 
     const path = window.location.pathname;
-    console.log("Ruta:", window.location.pathname);
+    let spotsFromJSON = [];
 
-    let spots = [];
-
-    // determine the correct category from the URL path
     if (path.includes("/parks")) {
-    spots = await getParkSpots();
+        spotsFromJSON = await getParkSpots();
 
     } else if (path.includes("/coffee-shops")) {
-        spots = await getCoffeeSpots();
+        spotsFromJSON = await getCoffeeSpots();
 
     } else if (path.includes("/libraries")) {
-        spots = await getLibrarySpots();
+        spotsFromJSON = await getLibrarySpots();
     }
 
-    console.log("Spots cargados:", spots);
+    const userSpots = getUserSpots();
 
-    renderCards(spots);
+    const matchingUserSpots = userSpots.filter(spot => {
+
+        if (path.includes("/parks")) {
+        return spot.type.toLowerCase() === "park";
+
+        } else if (path.includes("/coffee-shops")) {
+        return spot.type.toLowerCase() === "coffee_shop";
+
+        } else if (path.includes("/libraries")) {
+            return spot.type.toLowerCase() === "park";        
+        }
+
+    })
+
+    const combinedSpots = [...spotsFromJSON, ...matchingUserSpots];
+    renderCards(combinedSpots);
 }
 
 init();

@@ -7,7 +7,5 @@ loadHeaderFooter();
 const manager = new collaborateSpotManager("collaborates-spots");
 
 document.addEventListener("DOMContentLoaded", () => {
-
     manager.init();
-
 })

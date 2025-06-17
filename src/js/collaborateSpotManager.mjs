@@ -11,33 +11,34 @@ export class collaborateSpotManager {
 
     // Init
     init() {
-        document.getElementById("collaborateForm").addEventListener("submit", (e) => {
-            e.preventDefault();
-            this.createSpot();
-        })
-    }
 
-    // Create Spot method
-    createSpot() {
         const formElement = document.getElementById("collaborateForm");
-        const formData = new FormData(formElement);
-        const spot = {};
 
-        formData.forEach((value, key) => {
-            spot[key] = value;
+        formElement.addEventListener("submit", (e) => {
+            e.preventDefault();
+
+            const spot = {
+                id: `user-${Date.now()}`,
+                name: formElement.querySelector("input[name = 'name']").value,
+                address: formElement.querySelector("input[name = 'address']").value,
+                type: formElement.querySelector("select[name = 'type']").value,
+                noise: formElement.querySelector("select[name = 'noise']").value,
+                wifi: formElement.querySelector("select[name = 'wifi']").value,
+                rating: formElement.querySelector("select[name = 'rating']").value,
+                comments: formElement.querySelector("textarea[name = 'comments']").value,
+            }
+
+            this.saveSpot(spot);
+            formElement.reset();
         })
-
-        console.log("Data from the user:", spot);
-        this.saveSpot(spot);
     }
 
-    // Save Spot method
+    // Save Spot in localStorage method
     saveSpot(spot) {
         const spots = getLocalStorage(this.key) || [];
         spots.push(spot);
         setLocalStorage(this.key, spots);
 
-        alert("Spot saved successfully!");
-        document.getElementById("collaborateForm").reset();
+        alert("Thanks for your help! Have a great study time!");
     }
 }

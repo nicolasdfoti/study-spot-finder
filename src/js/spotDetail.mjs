@@ -1,6 +1,6 @@
 // SPOT DETAILS: Manage details for each spot
 
-import { getParam, loadHeaderFooter, getLocalStorage, getUserSpots, findSpotById, fetchSpotFromJSON, setLocalStorage, removeFromFavorites } from "./utils.mjs";
+import { getParam, loadHeaderFooter, getLocalStorage, getUserSpots, findSpotById, setLocalStorage, removeFromFavorites } from "./utils.mjs";
 import { loadAndStoreSpots, getAllSpotsFromStorage } from "./externalServices.mjs";
 
 async function init() {
@@ -27,16 +27,13 @@ if (spot) {
     console.error("No such place");
 }
 
+// function to render spot details
 function renderSpotDetails(spot) {
 
     const container = document.querySelector("#spot-details");
 
     const spotDiv = document.createElement("div");
     spotDiv.classList.add("spot-info");
-
-    console.log("Tipo de spot:", spot.type);
-
-    const img = document.createElement("img");
 
     if (spot.type === "coffee_shop") {
         container.style.backgroundImage = 'url("/images/coffee.jpg")';
@@ -80,12 +77,11 @@ function renderSpotDetails(spot) {
             addToFavorites(spot);
         });
     }
-
-    container.appendChild(img);
     spotDiv.append(name, address, noise, wifi, rating, comments, button);
     container.appendChild(spotDiv);
 }
 
+// function to add spot to favorites
 function addToFavorites() {
     const favorites = getLocalStorage("favorites") || [];
     const alreadyAdded = favorites.some(fav => fav.id === spot.id);
