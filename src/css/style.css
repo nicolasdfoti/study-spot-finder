@@ -245,7 +245,7 @@ input:valid, select:valid {
 }
 
 .spot-card:hover {
-  background-color: lightgoldenrodyellow;
+  background-color: var(--cards-containers);
   box-shadow: 0px 2px 2px 0px var(--titles);
   transition: background-color 0.5s ease;
   transform: translateY(-3px);
