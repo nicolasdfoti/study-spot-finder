@@ -1,6 +1,27 @@
-import { loadHeaderFooter } from "./utils.mjs";
+// TIMER.MJS: Manage timer option
 
-loadHeaderFooter();
+import { loadHeaderFooter } from "./utils.mjs";
+import { loadQuote } from "./externalServices.mjs";
+
+document.addEventListener("DOMContentLoaded", () => {
+    showQuote();
+    loadHeaderFooter();
+})
+
+async function showQuote() {
+
+    const data = await loadQuote();
+    const container = document.getElementById("quote-box");
+
+    const div = document.createElement("div");
+    div.innerHTML = `
+        <blockquote>"${data.q}"</blockquote>
+        <p>- ${data.a}</p>
+    `;
+
+    container.append(div);
+}
+
 
 const countdownDisplay = document.getElementById("countdown");
 const timeInput = document.getElementById("timeInput");

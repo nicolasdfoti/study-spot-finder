@@ -41,3 +41,27 @@ export function getAllSpotsFromStorage() {
   
   return [...coffee, ...libraries, ...parks];
 }
+
+// get data from Google Books API
+export async function loadBooks() {
+  const query = "study";
+  const response = await fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
+  const data = await response.json();
+  return data;
+}
+
+// get data from Zen Quotes API
+export async function loadQuote() {
+  const res = await fetch("https://api.allorigins.win/raw?url=https://zenquotes.io/api/random");
+  const data = await res.json();
+  const quote = data[0];
+  return quote;
+}
+
+// get data from Numbers API
+export async function loadTrivia() {
+
+  const res = await fetch("http://numbersapi.com/random/trivia?json");
+  const data = await res.json();
+  return data;
+}

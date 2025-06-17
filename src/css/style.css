@@ -20,6 +20,17 @@
   --open: 'Open Sans', sans-serif;
 }
 
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 h1 {
   color: var(--titles);
   font-weight: bolder;
@@ -121,6 +132,7 @@ main {
   background-position: center;
   width: 100%;
   height: 30em;
+  animation: slideDown 3s;
 }
 
 #main-div h1, #main-div p {
@@ -325,3 +337,4 @@ input:valid, select:valid {
   color: var(--background);
   width: 100%;
 }
+
