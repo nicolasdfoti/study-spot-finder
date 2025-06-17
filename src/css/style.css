@@ -224,23 +224,28 @@ input:valid, select:valid {
 
 /* Cards */
 
-#spots-container {
+#spots-container, #favorite-spots-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
 
 .spot-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   background-color: var(--background);
   border: 1px solid var(--text-primary);
   padding: 3px;
   margin: 5px;
-  text-decoration: none;
   box-shadow: 0 2px 4px 0px var(--header-footer);
-  
+}
+
+.spot-card a {
+  text-decoration: none;
 }
 
 .spot-card:hover {
-  background-color: #A8CABA;
+  background-color: lightgoldenrodyellow;
   box-shadow: 0px 2px 2px 0px var(--titles);
   transition: background-color 0.5s ease;
   transform: translateY(-3px);
@@ -256,4 +261,34 @@ input:valid, select:valid {
 .spot-card p {
   font-family: var(--open);
   color: var(--header-footer);
+}
+
+/* Spot Details */
+
+#spot-details {
+  display: grid;
+  background-position: center;
+  height: 500px;
+  align-items: center;
+}
+
+.spot-info {
+  background-color: var(--background);
+  width: 100%;
+  padding: 10px;
+}
+
+.spot-info h2, .spot-info h3 {
+  color: var(--titles);
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.spot-info p {
+  color: var(--text-primary);
+}
+
+.spot-info button {
+  margin-top: 10px;
+  font-size: 20px;
 }

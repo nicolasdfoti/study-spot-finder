@@ -1,7 +1,7 @@
 // SPOTS MJS: Manages the data that comes from the JSON and filters it
 
 import { getCoffeeSpots, getLibrarySpots, getParkSpots } from "./externalServices.mjs";
-import { loadHeaderFooter } from "./utils.mjs";
+import { loadHeaderFooter, buildSpotCard } from "./utils.mjs";
 
 loadHeaderFooter();
 
@@ -40,23 +40,4 @@ function renderCards(spots) {
         const card = buildSpotCard(spot);
         container.appendChild(card);
     });
-}
-
-// function to build the cards
-function buildSpotCard(spot) {
-
-    const a = document.createElement("a");
-    a.href = `/spot-detail.html?id=${spot.id}`;
-    a.classList.add("spot-card");
-
-    a.innerHTML = `
-        <h3>${spot.name}</h3>
-        <p>Location: ${spot.address}</p>
-        <p>Is it noisy? ${spot.noise}</p>
-        <p>Does it have WiFi? ${spot.wifi}</p>
-        <p>Overall rating: ${spot.rating}</p>
-        <p>Comments: ${spot.comments}</p>
-    `;
-
-    return a;
 }
