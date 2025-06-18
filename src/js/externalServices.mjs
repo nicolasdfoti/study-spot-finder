@@ -61,7 +61,7 @@ export async function loadQuote() {
 // get data from Numbers API
 export async function loadTrivia() {
 
-  const res = await fetch("http://numbersapi.com/random/trivia?json");
+  const res = await fetch("https://uselessfacts.jsph.pl/api/v2/facts/random?language=en");
   const data = await res.json();
   return data;
 }
