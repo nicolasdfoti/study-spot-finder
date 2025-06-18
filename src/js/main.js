@@ -17,6 +17,7 @@ async function showBooks() {
     const info = book.volumeInfo;
 
     const div = document.createElement("div");
+    div.classList.add("books");
     div.innerHTML = `
       <h4>${info.title}</h4>
       <p>${info.authors?.join(", ") || "Unknown author"}</p>

@@ -32,7 +32,7 @@
         <fieldset>
           <label for="type">Select the type of spot:
             <select name="type" id="type" required>
-              <option value="none" selected disabled>Select one</option>
+              <option value="" selected disabled>Select one</option>
               <option value="park">Park</option>
               <option value="coffee_shop">Coffee Shop</option>
               <option value="library">Library</option>
@@ -42,8 +42,8 @@
 
         <fieldset>
           <label for="noise" required>How quiet is it?
-            <select name="noise" id="noise">
-              <option value="noise" selected disabled>Select one:</option>
+            <select name="noise" id="noise" required>
+              <option value="" selected disabled>Select one</option>
               <option value="very-quiet">Very quiet</option>
               <option value="moderate">Moderate</option>
               <option value="noisy">Noisy</option>
@@ -54,7 +54,7 @@
         <fieldset>
           <label for="wifi">Does it have Wi-Fi?
             <select name="wifi" id="wifi" selected required>
-              <option value="wifi">Select one:</option>
+              <option value="" selected disabled>Select one</option>
               <option value="yes">Yes</option>
               <option value="no">No</option>
               <option value="unknown">I don't know</option>
@@ -65,7 +65,7 @@
         <fieldset>
           <label for="rating">Rating: (1 as the best)
             <select name="rating" id="rating" required>
-              <option value="rating" selected>Select one:</option>
+              <option value="" selected disabled>Select one</option>
               <option value="1">1</option>
               <option value="2">2</option>
               <option value="3">3</option>

@@ -193,6 +193,30 @@ main {
   margin: 20px;
 }
 
+#books-title {
+  margin: 50px 0 0 30px;
+}
+
+.books {
+  padding: 10px;
+  border: 1px solid var(--titles);
+}
+
+.books h4 {
+  color: var(--text-primary);
+}
+
+.books p {
+  color: var(--text-primary);
+}
+
+#books-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px 30px 0 30px;
+}
+
 /* Collaborate */
 
 /* Form */
@@ -282,6 +306,19 @@ input:valid, select:valid {
   color: var(--header-footer);
 }
 
+#trivia-box {
+  padding: 10px;
+  width: 70%;
+  justify-self: center;
+  text-align: center;
+  background-color: var(--cards-containers);
+}
+
+#trivia-title {
+  text-align: center;
+  margin-top: 30px;
+}
+
 /* Spot Details */
 
 #spot-details {
@@ -325,8 +362,6 @@ input:valid, select:valid {
 #timer {
   width: 50%;
   justify-self: center;
-  height: auto;
-  margin-bottom: 30px;
   padding: 10px;
   border: 2px solid var(--header-footer);
 }
@@ -338,3 +373,12 @@ input:valid, select:valid {
   width: 100%;
 }
 
+#quote-box {
+  text-align: center;
+  background-color: var(--cards-containers);
+  padding: 10px;
+}
+
+#quote-box blockquote {
+  font-weight: bold;
+}
